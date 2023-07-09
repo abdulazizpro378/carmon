@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.showAdd{
+  display: flex;
+  position: relative;
+  top: 70px;
+  z-index: 2;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.Accardion-debts{
+  margin-top: 20px !important;
+  width: 800px;
+  margin: 0 auto;
+  height: 80%;
+}
+
+.select-mr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body{
+  background-image: url(https://cdn4.sharechat.com/naturalbackground_15e23079_1594694953111_cmprsd_40.jpg?tenant=sc&referrer=pwa-sharechat-service&f=naturalbackground_15e23079_1594694953111_cmprsd_40.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-size: 100%;
+}
+.accardion-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.total{
+  margin-left: 20px;
+  margin: 0 auto;
+  font-size: 18px;
+  display: inline-block;
+  background-color: white;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.category{
+  display: flex;
+ 
+  background-color: white;
+  align-items: center;
+  color: black;
+  padding: 10px;
+}
+
+
+
+.Accardion-debts-1{
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 300px;
+  margin-top: 20px !important;
+  width: 800px;
+  margin: 0 auto;
+}
+
