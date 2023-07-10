@@ -4,8 +4,7 @@ import { useNavigate } from "react-router-dom";
 const LoginP = () => {
   const navigate = useNavigate();
 
-  // const [username, setUsername] = useState("");
-  // const [password, setPassword] = useState("");
+ 
 
   const [user, setUser] = useState({ username: "", password: "" });
 
@@ -13,20 +12,13 @@ const LoginP = () => {
     e.preventDefault();
     console.log(user);
 
-    if (user.username === "abdulaziz" && user.password === "abd") {
-      // navigate("/products");
-      navigate("/home");
+    if (user.username === "abdulaziz" && user.password === "pro") {
+      navigate("/debts");
     } else {
-      alert("Check info !");
+      alert("Error !!!");
     }
   };
-  // const handleUsername = (e) => {
-  //   setUsername(e.target.value);
-  // };
-  // const handlePassword = (e) => {
-  //   setPassword(e.target.value);
-  // };
-
+ 
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
@@ -39,12 +31,12 @@ const LoginP = () => {
         alignItems: "center",
       }}
     >
-      <form>
+      <form className="form-2">
         <input
           type="text"
           name="username"
           value={user.username}
-          // onChange={handleUsername}
+       
           onChange={handleChange}
           placeholder="username"
         />
@@ -54,11 +46,10 @@ const LoginP = () => {
           name="password"
           value={user.password}
           onChange={handleChange}
-          // onChange={handlePassword}
           placeholder="password"
         />
         <br />
-        <button type="submit" onClick={login}>
+        <button type="submit" className="btn btn-success p-3" onClick={login}>
           LoginP
         </button>
       </form>

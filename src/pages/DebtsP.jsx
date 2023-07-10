@@ -5,6 +5,9 @@ const DebtsP = () => {
   const [show, setShow] = useState(false);
   const [validated, setValidated] = useState(false);
   const [selected, setSelected] = useState(null);
+
+
+
   const [debt, setDebt] = useState({
     id: "",
     price: null,
@@ -96,6 +99,11 @@ const DebtsP = () => {
 
     return () => clearInterval(interval);
   }, [debts]);
+
+
+  
+
+
   return (
     <Fragment>
       <Accordion className="Accardion-debts" defaultActiveKey="2" alwaysOpen>
